@@ -1,0 +1,49 @@
+[
+  { "text": "This is the best service I have ever used, truly wonderful.", "label": "positive", "language": "en" },
+  { "text": "The product broke after one day and nobody helped me.", "label": "negative", "language": "en" },
+  { "text": "The package arrived on Tuesday as scheduled.", "label": "neutral", "language": "en" },
+
+  { "text": "Le service était excellent et le personnel très aimable.", "label": "positive", "language": "fr" },
+  { "text": "Le produit est arrivé cassé et personne n'a répondu.", "label": "negative", "language": "fr" },
+  { "text": "La réunion est prévue pour mardi après-midi.", "label": "neutral", "language": "fr" },
+
+  { "text": "كانت الخدمة ممتازة والموظفون لطفاء جداً.", "label": "positive", "language": "ar" },
+  { "text": "وصل المنتج مكسوراً ولم يساعدني أحد.", "label": "negative", "language": "ar" },
+  { "text": "سيصل الطرد يوم الثلاثاء كما هو محدد.", "label": "neutral", "language": "ar" },
+
+  { "text": "El servicio fue excelente y el personal muy amable.", "label": "positive", "language": "es" },
+  { "text": "El producto llegó roto y nadie me ayudó.", "label": "negative", "language": "es" },
+  { "text": "La reunión está programada para el martes por la tarde.", "label": "neutral", "language": "es" },
+
+  { "text": "Der Service war ausgezeichnet und das Personal sehr freundlich.", "label": "positive", "language": "de" },
+  { "text": "Das Produkt kam kaputt an und niemand hat mir geholfen.", "label": "negative", "language": "de" },
+  { "text": "Das Paket kommt am Dienstag wie geplant an.", "label": "neutral", "language": "de" },
+
+  { "text": "सेवा बहुत अच्छी थी और कर्मचारी बहुत विनम्र थे।", "label": "positive", "language": "hi" },
+  { "text": "उत्पाद टूटा हुआ आया और किसी ने मेरी मदद नहीं की।", "label": "negative", "language": "hi" },
+  { "text": "पैकेज मंगलवार को तय समय पर पहुंचेगा।", "label": "neutral", "language": "hi" },
+
+  { "text": "O serviço foi excelente e a equipe muito simpática.", "label": "positive", "language": "pt" },
+  { "text": "O produto chegou quebrado e ninguém me ajudou.", "label": "negative", "language": "pt" },
+  { "text": "A reunião está marcada para terça-feira à tarde.", "label": "neutral", "language": "pt" },
+
+  { "text": "Il servizio è stato eccellente e il personale molto gentile.", "label": "positive", "language": "it" },
+  { "text": "Il prodotto è arrivato rotto e nessuno mi ha aiutato.", "label": "negative", "language": "it" },
+  { "text": "Il pacco arriverà martedì come previsto.", "label": "neutral", "language": "it" },
+
+  { "text": "Обслужването беше отлично и персоналът много любезен.", "label": "positive", "language": "bg" },
+  { "text": "Продуктът пристигна счупен и никой не ми помогна.", "label": "negative", "language": "bg" },
+  { "text": "Пратката ще пристигне във вторник по график.", "label": "neutral", "language": "bg" },
+
+  { "text": "خدمات عالی بود و کارکنان بسیار مهربان بودند.", "label": "positive", "language": "fa" },
+  { "text": "محصول شکسته رسید و هیچ‌کس به من کمک نکرد.", "label": "negative", "language": "fa" },
+  { "text": "بسته روز سه‌شنبه طبق برنامه می‌رسد.", "label": "neutral", "language": "fa" },
+
+  { "text": "サービスは素晴らしく、スタッフはとても親切でした。", "label": "positive", "language": "ja" },
+  { "text": "製品は壊れて届き、誰も助けてくれませんでした。", "label": "negative", "language": "ja" },
+  { "text": "荷物は予定通り火曜日に届きます。", "label": "neutral", "language": "ja" },
+
+  { "text": "服务非常好，员工也很热情。", "label": "positive", "language": "zh" },
+  { "text": "产品到货时就坏了，没有人帮我。", "label": "negative", "language": "zh" },
+  { "text": "包裹将按计划于周二送达。", "label": "neutral", "language": "zh" }
+]
