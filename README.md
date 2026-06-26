@@ -71,19 +71,8 @@ flowchart LR
 
 ---
 
-## 📊 Results
 
-Evaluated across **12 languages** (8 seen + 4 unseen / zero-shot), weighted F1:
-
-| Model | Avg F1 · 12 languages | vs. mBERT |
-|---|:---:|:---:|
-| mBERT | 0.459 | — |
-| **MultiSent-RAG** | **0.783** | **+0.324** |
-
-- 🎯 **Zero-shot that actually works** — classifies *unseen* languages with no in-language examples (e.g. **Japanese 0.898**, **Bulgarian 0.771**) purely through cross-lingual retrieval.
-- ⚖️ **Memory is an honest trade-off** — high reuse means big latency savings; a tighter match protects accuracy. The full breakdown of when memory *helps* vs. *hurts* lives in the complete build.
-
-> 📦 This demo is the interactive face of a larger system. The **complete build — full pipeline, evaluation, and detailed results — lives in [the original MultiSent-RAG repo](https://github.com/KhouloudMN97/MultiSent-RAG)**.
+> 📦 This demo is the interactive face of a larger system. The **complete build (full pipeline, evaluation, and detailed results) lives in [the original MultiSent-RAG repo](https://github.com/KhouloudMN97/MultiSent-RAG)**.
 
 ---
 
@@ -151,8 +140,3 @@ multisent-rag-demo/
 
 - 🚀 Live demo -> https://huggingface.co/spaces/khouloud/multisent-rag-demo
 - 📦 Full build -> https://github.com/KhouloudMN97/MultiSent-RAG
-
-<div align="center">
-<br/>
-<sub>Designed &amp; built by Khouloud Mnassri</sub>
-</div>
