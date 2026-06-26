@@ -3,3 +3,5 @@ sentence-transformers
 groq
 python-dotenv
 chromadb
+fastapi
+uvicorn[standard]

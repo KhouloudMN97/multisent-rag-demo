@@ -45,6 +45,7 @@ Most sentiment demos hand back a single label and hide the rest. This one **show
 
 ---
 
+
 ## ⚙️ How it works
 
 ```mermaid
@@ -73,6 +74,34 @@ flowchart LR
 
 
 > 📦 This demo is the interactive face of a larger system. The **complete build (full pipeline, evaluation, and detailed results) lives in [the original MultiSent-RAG repo](https://github.com/KhouloudMN97/MultiSent-RAG)**.
+
+---
+
+## 🔌 REST API
+
+The same pipeline is also exposed as a documented **FastAPI** service — callable from any app, not just the UI. One engine, two interfaces.
+
+\`\`\`bash
+uvicorn api:app --reload          # interactive docs → http://127.0.0.1:8000/docs
+\`\`\`
+
+**`POST /predict`**
+
+\`\`\`json
+// request
+{ "text": "J'adore ce produit !", "language": "fr" }
+
+// response
+{ "label": "positive", "source": "vector_db", "latency_ms": 612.4, "retrieved": [...] }
+\`\`\`
+
+Every response shows the **path taken** — `"source": "cache"` (reused from memory) or `"vector_db"` (computed fresh) — plus latency and the evidence used.
+
+| Endpoint | Method | Purpose |
+|---|---|---|
+| `/predict` | `POST` | Classify a sentence → label, path, latency, evidence |
+| `/health` | `GET` | Liveness probe |
+| `/docs` | `GET` | Interactive Swagger UI |
 
 ---
 
@@ -115,6 +144,8 @@ python app.py
 ```
 
 Open the local URL Gradio prints (usually `http://127.0.0.1:7860`).
+
+
 
 ---
 
