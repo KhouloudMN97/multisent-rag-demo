@@ -36,10 +36,10 @@
 
 Most sentiment demos hand back a single label and hide the rest. This one **shows its reasoning** — and runs two things ordinary RAG doesn't:
 
-- ⚡ **Semantic memory** — when a new input is close in meaning to one already seen, the system **reuses the answer and skips both retrieval and the model**. Every cache hit is shown live, with the real speed difference.
-- 🌍 **Cross-lingual transfer** — a sentence in one language is classified using examples retrieved from *other* languages, in a shared multilingual space. Type Japanese, watch it reason from French and German.
-- 🔍 **Fully transparent** — each result shows the **path taken** (memory vs. fresh) and the **evidence used** (which sentences, in which languages).
-- 🪶 **Training-free & laptop-friendly** — no fine-tuning, and the model is served over an API, so it runs on CPU with no GPU anywhere.
+- ⚡ **Semantic memory:** when a new input is close in meaning to one already seen, the system **reuses the answer and skips both retrieval and the model**. Every cache hit is shown live, with the real speed difference.
+- 🌍 **Cross-lingual transfer:** a sentence in one language is classified using examples retrieved from *other* languages, in a shared multilingual space. Type Japanese, watch it reason from French and German.
+- 🔍 **Fully transparent:** each result shows the **path taken** (memory vs. fresh) and the **evidence used** (which sentences, in which languages).
+- 🪶 **Training-free & laptop-friendly:** no fine-tuning, and the model is served over an API, so it runs on CPU with no GPU anywhere.
 
 > 👉 **[Open the live demo](https://huggingface.co/spaces/khouloud/multisent-rag-demo)**, click ① then ② — and watch a French input reuse an English answer straight from memory. Cross-lingual caching, in one click.
 
@@ -67,7 +67,7 @@ flowchart LR
 1. **Memory first.** The input is embedded and compared to everything seen so far. A close match returns instantly — no retrieval, no model call.
 2. **Retrieve on a miss.** Otherwise the most similar labeled examples are pulled from a **Chroma** vector store via semantic search.
 3. **Generate.** Those examples become a few-shot prompt; the LLM classifies the sentiment.
-4. **Remember.** The new prediction is stored — so the next similar input, *in any language*, becomes a fast hit.
+4. **Remember.** The new prediction is stored, so the next similar input, *in any language*, becomes a fast hit.
 
 ---
 
