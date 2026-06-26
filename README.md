@@ -4,7 +4,7 @@
 
 # MultiSent-RAG
 
-### Multilingual sentiment that classifies in **12 languages** — with a semantic **memory** and **cross-lingual** retrieval. No training. No GPU.
+### Multilingual sentiment that classifies in **12 languages**  with a semantic **memory** and **cross-lingual** retrieval. No training. No GPU.
 
 <br/>
 
